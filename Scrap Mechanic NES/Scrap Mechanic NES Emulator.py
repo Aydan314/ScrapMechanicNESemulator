@@ -116,13 +116,13 @@ class ALU:
         self.Accumulator = 0
 
     def IsEqual(self):
-        return self.RegisterA == self.RegisterB
+        return int(self.RegisterA) == int(self.RegisterB)
 
     def IsMore(self):
-        return self.RegisterA > self.RegisterB
+        return int(self.RegisterA) > int(self.RegisterB)
 
     def IsLess(self):
-        return self.RegisterA < self.RegisterB
+        return int(self.RegisterA) < int(self.RegisterB)
 
     def ReadValue(self):
         return self.Accumulator
